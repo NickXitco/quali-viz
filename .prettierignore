@@ -1,0 +1,24 @@
+node_modules
+.next
+.circleci
+.storybook
+yarn.lock
+package-lock.json
+public
+storybook
+
+# cosmos export
+/cosmos-export
+
+# testing
+/coverage
+/build
+tests/node_modules
+
+**/node_modules/*
+**/out/*
+**/.next/*
+**/.husky/*
+**/.circleci/*
+**/.vscode/*
+**/public/*

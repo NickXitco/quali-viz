@@ -1,0 +1,143 @@
+.App {
+  background: #000009;
+  color: white;
+  font-family: montserrat, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5,h6 {
+  margin: 0;
+}
+
+h1 {
+  font-weight: 900;
+  margin: 0;
+  inset: 20px;
+  position: absolute;
+
+  span {
+    font-weight: 200;
+  }
+
+}
+
+.vh {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.dropdowns {
+  position: absolute;
+  right: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.season_dropdown {
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 36px;
+  font-family: "montserrat", sans-serif;
+  font-weight: 200;
+  text-align: right;
+  appearance: none;
+  padding: 0;
+}
+
+.session_view {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quali_selector_closed {
+  bottom: -36px !important;
+}
+
+.quali_selector {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  transition: bottom 0.25s ease;
+
+  fieldset {
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0;
+
+    border-top: thin white solid;
+  }
+
+  label {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+
+    transition: all 0.1s ease;
+  }
+
+  input:checked+label {
+    background: white;
+    //border-radius: 0 0 5px 5px;
+    color: #000009;
+  }
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  position: relative;
+}
+.loader::after,
+.loader::before {
+  content: '';
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #FFF;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: animloader 2s linear infinite;
+}
+.loader::after {
+  animation-delay: 1s;
+}
+
+@keyframes animloader {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,13 @@
+{
+	"extends": ["stylelint-config-recommended", "stylelint-config-standard-scss", "stylelint-prettier/recommended"],
+	"rules": {
+		"selector-pseudo-class-no-unknown": null,
+		"selector-class-pattern": null,
+		"property-no-unknown": null,
+		"function-name-case": null,
+		"declaration-block-no-redundant-longhand-properties": null,
+		"declaration-empty-line-before": null,
+		"property-no-vendor-prefix": null,
+		"no-descending-specificity": null
+	}
+}
