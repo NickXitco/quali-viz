@@ -1,0 +1,62 @@
+@import "utils";
+
+.sectors {
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.sector_box {
+	font-weight: $light;
+	font-size: 18px;
+	background: white;
+	display: inline-block;
+	color: $bg;
+	padding: 5px 10px;
+
+	letter-spacing: 0.1em;
+
+	cursor: pointer;
+}
+
+.sector_times {
+	border-left: thin white solid;
+	padding: 10px;
+	height: 440px;
+}
+
+.sector_times_ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.color_tag {
+	display: inline-block;
+	margin-right: 6px;
+	width: 4px;
+	height: 12px;
+}
+
+.result {
+	font-weight: $black;
+	font-size: 18px;
+	letter-spacing: 0.1em;
+
+	padding-right: 4px;
+
+	&:nth-child(even) {
+		background: rgba(255, 255, 255, 0.05);
+	}
+
+	opacity: 0;
+}
+
+.result_abbreviation {
+	width: 65px;
+	display: inline-block;
+}
+
+.result_time {
+		font-weight: $light;
+}

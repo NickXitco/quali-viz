@@ -1,0 +1,22 @@
+@mixin reset-button {
+	background-color: transparent;
+	border-width: 0;
+	padding: 0;
+	cursor: pointer;
+	color: white;
+	font-family: montserrat, sans-serif;
+}
+
+$thin: 100;
+$extra-light: 200;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$extra-bold: 800;
+$black: 900;
+
+$bg: #150113;
+$bg-95: rgba(21, 1, 19, 0.95);
+$bg-90: rgba(21, 1, 19, 0.9);

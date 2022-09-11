@@ -1,5 +1,7 @@
+@import "utils";
+
 .App {
-  background: #000009;
+  background: $bg;
   color: white;
   font-family: montserrat, sans-serif;
   width: 100vw;
@@ -13,13 +15,14 @@ h1, h2, h3, h4, h5,h6 {
 }
 
 h1 {
-  font-weight: 900;
+  font-weight: $black;
   margin: 0;
-  inset: 20px;
+  top: 20px;
+  left: 20px;
   position: absolute;
 
   span {
-    font-weight: 200;
+    font-weight: $extra-light;
   }
 
 }
@@ -40,6 +43,7 @@ h1 {
   padding: 20px;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
 }
 
 .season_dropdown {
@@ -49,7 +53,7 @@ h1 {
   color: white;
   font-size: 36px;
   font-family: "montserrat", sans-serif;
-  font-weight: 200;
+  font-weight: $extra-light;
   text-align: right;
   appearance: none;
   padding: 0;
@@ -96,7 +100,7 @@ h1 {
     align-items: center;
     cursor: pointer;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: $bold;
 
     transition: all 0.1s ease;
   }
@@ -104,7 +108,7 @@ h1 {
   input:checked+label {
     background: white;
     //border-radius: 0 0 5px 5px;
-    color: #000009;
+    color: $bg;
   }
 }
 
@@ -140,4 +144,9 @@ h1 {
     transform: scale(1);
     opacity: 0;
   }
+}
+
+.round_number {
+  margin: 0;
+  padding-right: 20px;
 }
